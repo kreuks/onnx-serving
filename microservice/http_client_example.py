@@ -50,8 +50,7 @@ def __get_inference(url: str, port_number: str, data: np.array) -> dict:
 
 
 test_data = np.load('../test_data.npy')
-while True:
-    for x in test_data:
-        start = time.time()
-        print(__get_inference('http://localhost', '9001', x))
-        print('inference time ', (time.time() - start) * 1000)
+for x in test_data:
+    start = time.time()
+    print(__get_inference('http://localhost', '9001', x))
+    print('inference time ', (time.time() - start) * 1000)

@@ -9,3 +9,5 @@ dependencies:
   - xgboost
   - onnxmltools
   - onnx
+  - grpcio
+  - onnxruntime
