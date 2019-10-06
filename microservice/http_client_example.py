@@ -1,9 +1,11 @@
-import numpy as np
+import time
 import requests
+
+import numpy as np
+from google.protobuf.json_format import MessageToJson
+
 import predict_pb2
 import onnx_ml_pb2
-import time
-from google.protobuf.json_format import MessageToJson
 
 
 def __get_request_message(data: np.array) -> predict_pb2.PredictRequest:

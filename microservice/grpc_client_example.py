@@ -1,8 +1,10 @@
+import time
+
+import grpc
 import numpy as np
+
 import predict_pb2
 import onnx_ml_pb2
-import time
-import grpc
 import prediction_service_pb2_grpc
 
 
